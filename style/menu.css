@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --main: #008196
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background: var(--main);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: sticky;
+    top: 0;
+}
+
+header .logoCMI a{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 40px;
+}
+
+header .logoCMI a img{
+    height: 100%;
+}
+
+header .logoUE a{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+header .logoUE a img{
+    height: 100%;
+}
+
+header .links{
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .links a{
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black;
+    font-size: 18px;
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header .links span{
+    height: 2px;
+    width: 0%;
+    background: var(--main);
+    display: block;
+    transition: .5s;
+}
+
+header .links a:hover{
+    color: var(--main);
+}
+
+header .links a:hover span{
+    width: 100%;
+}
