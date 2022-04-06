@@ -1,0 +1,4 @@
+galeria
+opis na stronie głównej co to jest CMI
+opis robota mbot
+prezentacja zadań algorytmicznych
