@@ -1,7 +1,5 @@
 footer{
-    position: absolute;
     overflow: hidden;
-    bottom: 0;
     height: 125px;
     background: #fff;
     display: flex;
