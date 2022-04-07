@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="../style/menu.css">
     <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/zadanie.css">
 </head>
 <body>
     <header>
@@ -27,7 +28,12 @@
         </div>
     </header>
 
-
+    <section class="zadania">
+        <div  id = "zad1" onclick="f1()">Tancerki<div id="zad2"><a href="tancerka.pdf" target="_blank" style="color: black;">Zadanie</a></div></div>
+        <div  id = "zad1" onclick="f1()">Halinka<div id="zad2"><a href="hal.pdf" target="_blank" style="color: black;">Zadanie</a></div></div>
+        <div  id = "zad1" onclick="f1()">Biblioteka<div id="zad2"><a href="bib.pdf" target="_blank" style="color: black;">Zadanie</a></div></div>
+      </section>
+      
     <footer>
         <div class="authors">
             <p>Autorzy:<br><span>Kamil Tomiczek</span><br><span>Paweł Barczyk</span></p>
@@ -44,5 +50,10 @@
             <img src="../img/LogoCMI.png" alt="">
         </div>
     </footer>
+    <script>
+        function f1(){
+          document.getElementById("zad1").style.transitionDuration = "1s";
+        }
+      </script>
 </body>
 </html>
