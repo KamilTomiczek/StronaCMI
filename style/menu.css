@@ -28,6 +28,7 @@ header{
 }
 
 header .logoCMI a{
+    width: 200px;
     height: 60px;
     display: flex;
     justify-content: center;
@@ -39,15 +40,16 @@ header .logoCMI a img{
     height: 100%;
 }
 
-header .logoUE a{
-    height: 100px;
+header .logoZST a{
+    width: 200px;
+    height: 85px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5px 20px;
 }
 
-header .logoUE a img{
+header .logoZST a img{
     height: 100%;
 }
 
