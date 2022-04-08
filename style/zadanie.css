@@ -15,34 +15,22 @@ body {
     padding-top: 20px;
     overflow: auto;
     transition: all 1s;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
     font-family: 'Montserrat', sans-serif;
     overflow-y:hidden;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
+    border: 1rem solid #fff;
+    border-radius: 16px;
   }
   #zad1:hover {
-    border: 0;
-    border-radius: 5px;
     width: 68%;
     text-align: center;
     height: 180px;
-    font-size: 40px;
-    padding:20px;
-    border-top-left-radius: 13px;
-    border-top-right-radius: 13px;
-    border-bottom-left-radius: 13px;
-    border-bottom-right-radius: 13px;
-    
   }
   #zad1:hover #zad2 {
     display: block;
     transition-delay: 0.5s;
-    background: white;
     margin-left: auto;
     margin-right: auto;
     opacity: 1;
@@ -51,7 +39,6 @@ body {
   #zad2 {
     opacity: 0;
     transition: 1s;
-    background: rgba(255, 255, 255, .9);
     text-align: left;
     font-size: 30px;
   }
