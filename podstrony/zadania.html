@@ -151,7 +151,7 @@
                 </span><span class="cm-line">}</span></div></code></pre> </div></div>
         
         
-        <div style="margin-bottom: 20px;"  id = "zad1" onmouseout="f1(this)" class="links"><a href="../pdf/ciesnina.pdf" target="_blank" style="color: black;"><div class="blokada">Cieśnina</div> <span class="spanon"></span></a><div id="zad2"><pre class="ui-box ch azn dp tn wq azo azp el azq azr"><code class="ui-box jd afl azs dp azt dr azo azj azu azk azv bt azw bs azx azy azz baa bab bac bae baf bag bah bai baj bak bal bam ban bao bap baq bar bas bat bau bav baw bax bay baz bba bbb bbc bbd bbe bbf bbg  bbh bbi"><div class="codebox"><span class="cm-line"><span class="cm-meta">#include &lt;iostream&gt;</span></span><span class="cm-line"><span class="cm-meta"><br>#include &lt;math.h&gt;</span></span><span class="cm-line"></span><span class="cm-line"><span class="cm-keyword"><br>using</span> <span class="cm-keyword">namespace</span> <span class="cm-def">std</span>;
+        <div  id = "zad1" onmouseout="f1(this)" class="links"><a href="../pdf/ciesnina.pdf" target="_blank" style="color: black;"><div class="blokada">Cieśnina</div> <span class="spanon"></span></a><div id="zad2"><pre class="ui-box ch azn dp tn wq azo azp el azq azr"><code class="ui-box jd afl azs dp azt dr azo azj azu azk azv bt azw bs azx azy azz baa bab bac bae baf bag bah bai baj bak bal bam ban bao bap baq bar bas bat bau bav baw bax bay baz bba bbb bbc bbd bbe bbf bbg  bbh bbi"><div class="codebox"><span class="cm-line"><span class="cm-meta">#include &lt;iostream&gt;</span></span><span class="cm-line"><span class="cm-meta"><br>#include &lt;math.h&gt;</span></span><span class="cm-line"></span><span class="cm-line"><span class="cm-keyword"><br>using</span> <span class="cm-keyword">namespace</span> <span class="cm-def">std</span>;
         
                 </span><span class="cm-line"></span><span class="cm-line"><span class="cm-type">int</span> <span class="cm-def">main</span>() {
                 </span><span class="cm-line">    <span class="cm-type">long</span> <span class="cm-type">long</span>  <span class="cm-variable">p</span>;
@@ -172,6 +172,37 @@
                 </span><span class="cm-line">        }
                 </span><span class="cm-line"></span><span class="cm-line">    <span class="cm-keyword">return</span> <span class="cm-number">0</span>;
                 </span><span class="cm-line">}</span></div></code></pre> </div></div>
+                <div style="margin-bottom: 20px;"  id = "zad1" onmouseout="f1(this)" class="links"><a href="../pdf/raz.pdf" target="_blank" style="color: black;"><div class="blokada">Kolejność</div> <span class="spanon"></span></a><div id="zad2">
+                    <pre class="ui-box ch ahd dp fh xe ahe ahf el ahg ahh"><div class="codebox"><code class="ui-box jh bx ahi dp ahj dr ahe agz ahk aha ahl bt ahm bs ahn aho ahp ahq ahr ahs aht ahu ahv ahw ahx ahy ahz aia aib aic aid aie aif aig aih aii aij aik ail aim ain aio aip aiq air ais ait aiu aiv aiw aix"><span class="cm-line"><span class="cm-meta">#include &lt;iostream&gt;</span>
+</span><span class="cm-line"></span><span class="cm-line"><span class="cm-keyword">using</span> <span class="cm-keyword">namespace</span> <span class="cm-def">std</span>;
+                
+                </span><span class="cm-line"></span><span class="cm-line"><span class="cm-type">int</span> <span class="cm-def">main</span>()
+                </span><span class="cm-line">{
+                </span><span class="cm-line">    <span class="cm-variable">setlocale</span>(<span class="cm-variable">LC_ALL</span>, <span class="cm-string">""</span>);
+               </span><span class="cm-line"></span><span class="cm-line">    <span class="cm-type">int</span> <span class="cm-variable">a</span>,<span class="cm-variable">b</span>,<span class="cm-variable">c</span>;
+                </span><span class="cm-line">    <span class="cm-variable">c</span> <span class="cm-operator">=</span> <span class="cm-number">1</span>;
+                </span><span class="cm-line">    <span class="cm-variable">b</span> <span class="cm-operator">=</span> <span class="cm-number">1</span>;
+                </span><span class="cm-line">    <span class="cm-type">int</span> <span class="cm-variable">h</span> <span class="cm-operator">=</span> <span class="cm-number">0</span>;
+                </span><span class="cm-line">    <span class="cm-variable">string</span> <span class="cm-variable">txt</span>;
+                </span><span class="cm-line"></span><span class="cm-line">    <span class="cm-variable">cout</span> <span class="cm-operator">&lt;&lt;</span> <span class="cm-string">"Wpisz liczbę zdań do wpisania\n"</span>;
+                </span><span class="cm-line">    <span class="cm-variable">cin</span> <span class="cm-operator">&gt;&gt;</span> <span class="cm-variable">a</span>;
+                </span><span class="cm-line">    <span class="cm-variable">system</span>(<span class="cm-string">"cls"</span>);
+                </span><span class="cm-line">    <span class="cm-variable">string</span><span class="cm-operator">*</span> <span class="cm-variable">tablica</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">string</span>[<span class="cm-variable">a</span>];
+                </span><span class="cm-line">    <span class="cm-keyword">for</span> (<span class="cm-type">int</span> <span class="cm-variable">i</span> <span class="cm-operator">=</span> <span class="cm-number">0</span>; <span class="cm-variable">i</span> <span class="cm-operator">&lt;</span> <span class="cm-variable">a</span>; <span class="cm-variable">i</span><span class="cm-operator">++</span>) {
+                </span><span class="cm-line">        <span class="cm-variable">cout</span> <span class="cm-operator">&lt;&lt;</span> <span class="cm-string">"Wpisz "</span> <span class="cm-operator">&lt;&lt;</span> <span class="cm-variable">b</span> <span class="cm-operator">&lt;&lt;</span> <span class="cm-string">" zdanie"</span> <span class="cm-operator">&lt;&lt;</span> <span class="cm-variable">endl</span>;
+                </span><span class="cm-line">        <span class="cm-variable">cin</span> <span class="cm-operator">&gt;&gt;</span> <span class="cm-variable">tablica</span>[<span class="cm-variable">i</span>];
+                </span><span class="cm-line">        <span class="cm-variable">txt</span> <span class="cm-operator">=</span> <span class="cm-variable">tablica</span>[<span class="cm-variable">i</span>];
+                </span><span class="cm-line">        <span class="cm-keyword">for</span> (<span class="cm-type">int</span> <span class="cm-variable">i</span> <span class="cm-operator">=</span> <span class="cm-number">0</span>; <span class="cm-variable">i</span> <span class="cm-operator">&lt;</span> <span class="cm-variable">txt</span>.<span class="cm-variable">length</span>(); <span class="cm-variable">i</span><span class="cm-operator">++</span>) {
+                </span><span class="cm-line">            <span class="cm-variable">txt</span>[<span class="cm-variable">c</span>] <span class="cm-operator">=</span> <span class="cm-variable">txt</span>[<span class="cm-variable">txt</span>.<span class="cm-variable">length</span>()<span class="cm-operator">-</span><span class="cm-variable">h</span>];
+                </span><span class="cm-line">            <span class="cm-variable">c</span><span class="cm-operator">++</span>;
+                </span><span class="cm-line">            <span class="cm-variable">h</span><span class="cm-operator">++</span>;
+                </span><span class="cm-line">        }
+                </span><span class="cm-line">        <span class="cm-variable">b</span><span class="cm-operator">++</span>;
+                </span><span class="cm-line">    }
+                </span><span class="cm-line">    <span class="cm-variable">cout</span> <span class="cm-operator">&lt;&lt;</span> <span class="cm-variable">txt</span> <span class="cm-operator">&lt;&lt;</span> <span class="cm-variable">endl</span>;
+                </span><span class="cm-line">}</span></code></div></pre>
+
+                </div>
       </section>
       
       <footer>
