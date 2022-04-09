@@ -13,6 +13,7 @@
 
 html{
     overflow-x: hidden;
+    scroll-behavior:smooth;
 }
 
 body{
@@ -20,51 +21,29 @@ body{
 }
 
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     position: sticky;
-    top: 0;
-    z-index: 2;
-}
-
-header .logoCMI a{
-    width: 200px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px 40px;
-}
-
-header .logoCMI a img{
-    height: 100%;
-}
-
-header .logoZST a{
-    width: 200px;
-    height: 85px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px 20px;
-}
-
-header .logoZST a img{
-    height: 100%;
-}
-
-header .links{
-    width: 700px;
+    top:0; left:0; right:0;
+    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: #fff;
+    padding: 1rem 9%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 }
 
-header .links a{
+header .logo img{
+    width: 200px;
+}
+
+header .navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+header .navbar a {
     text-decoration: none;
     font-weight: 700;
     text-transform: uppercase;
@@ -77,7 +56,21 @@ header .links a{
     flex-direction: column;
 }
 
-header .links span{
+header .navbar a:hover{
+    color:var(--main);
+}
+
+#menu-bar{
+    font-size: 3rem;
+    cursor: pointer;
+    color: #000;
+    border: #000 solid .1rem;
+    border-radius: .3rem;
+    padding: .5rem 1.5rem;
+    display: none;
+}
+
+header .navbar a span{
     height: 2px;
     width: 0%;
     background: var(--main);
@@ -85,100 +78,66 @@ header .links span{
     transition: .5s;
 }
 
-header .links a:hover{
+header .navbar a:hover{
     color: var(--main);
 }
 
-header .links a:hover span{
+header .navbar a:hover span{
     width: 100%;
 }
 
-header .icon{
-    display: none;
-}
+@media(max-width:991px){
 
-@media(max-width:1300px){
+    html{
+        font-size:55%;
+    }
+
     header{
-        height: 80px;
+        padding: 2rem;
     }
 
-    header .links{
-        width: 550px;
+    header .navbar a{
+        font-size: 1.8rem;
     }
-
-    header .links a{
-        font-size: 16px;
-    }
-
-    header .logoCMI a{
-        height: 50px;
-        width: 150px;
-    }
-
-    header .logoZST a{
-        height: 70px;
-        width: 150px;
-        padding: 5px 10px;
-    }
-}
-
-@media(max-width:950px){
-
-    header .links{
-        position: absolute;
-        top: 100%; left: 0%; right: 0;
-        background: #f7f7f7f7;
-        border-top: .1rem solid rgba(0,0,0,.1);
-        flex-direction: column;
-        width: 100%;
-        gap: 2rem;
-        padding: 40px 0;
-        transition: .5s;
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-
-    }
-
-    header .links.active{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    }
-
-    header .links a span{
-        display: none;
-    }
-
-    header .links a{
-        display: flex;
-        width: 80%;
-        height: 60px;
-        background: #fff;
-        border: 1px solid black;
-        font-size: 24px;
-        padding: 10px;
-    }
-
-    header .icon{
-        display: block;
-        font-size: 32px;
-        cursor: pointer;
-    }    
 }
 
 @media(max-width:768px){
 
+    #menu-bar{
+        display: initial;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #f7f7f7;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        flex-direction: column;
+        gap: 0;
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a {
+        margin: 1.5rem;
+        padding: 1.5rem;
+        display: block;
+        border: .2rem solid rgba(0,0,0,.1);
+        border-left: .5rem solid var(--main);
+        background: #fff;
+        width: calc(100% - 6rem);
+    }
+
+    header .navbar a span{
+        display: none;
+    }
 }
 
 @media(max-width:450px){
-    header .logoZST a{
-        margin-right: -30px;
-        height: 60px;
-    }
-
-    header .logoCMI a{
-        height: 40px;
-        padding: 0 10px;
-    }
-
-    header .icon {
-        font-size: 24px;
+    html{
+        font-size: 50%;
     }
 }

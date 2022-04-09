@@ -19,22 +19,18 @@
 </head>
 <body>
     <header>
-        <div class="logoCMI">
-            <a href="https://cmi.edu.pl" target="_blank"><img src="../img/LogoCMI.png" alt="CMI"></a>
-        </div>
-        <div class="links">
+        <a class="logo" href="https://cmi.edu.pl" target="_blank"><img src="../img/LogoCMI.png" alt="CMI"></a>
+
+        <div onclick="show()" id="menu-bar" class="fas fa-bars"></div>
+
+        <nav class="navbar">
             <a href="../index.html">Strona Główna<span></span></a>
-            <a href="galeria.html">Galeria<span></span></a>
-            <a href="#">Mbot<span></span></a>
-            <a href="zadania.html">Zadania<span></span></a>
-        </div>
-        <div onclick="show()" class="icon">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <div class="logoZST">
-            <a href="https://www.zst.edu.pl" target="_blank"><img src="../img/logoZST.png" alt="ZST Mikołów"></a>
-        </div>
+            <a href="../podstrony/galeria.html">Galeria<span></span></a>
+            <a href="../podstrony/mbot.html">Mbot<span></span></a>
+            <a href="../podstrony/zadania.html">Zadania<span></span></a>
+        </nav>
     </header>
+
     <section class="mbotimagine" id="mbotimagine">
         <div class="box-container" style="margin-right: 65%;">
             <div class="box">
@@ -45,16 +41,14 @@
         
     </section>
     <footer>
-        <div class="authors">
-            <p>Autorzy:<br><span>Kamil Tomiczek</span><br><span>Paweł Barczyk</span></p>
-        </div>
-
         <div class="partners">
             <img src="../img/logo0.png" alt="">
             <img src="../img/logo1.png" alt="">
             <img src="../img/logo2.png" alt="">
             <img src="../img/logo3.png" alt="">
         </div>
+
+        <h1 class="authors"> Autorzy: <span>Kamil Tomiczek | Paweł Barczyk</span></h1>
     </footer>
 </body>
 </html>
