@@ -1,5 +1,4 @@
 body {
-    overflow: hidden;
     background: #008196;
   }
 
@@ -9,6 +8,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
+    min-height: 80vh;
   }
   
   #zad1{
@@ -29,8 +29,7 @@ body {
   #zad1:hover {
     height: 450px;
     overflow-y:visible;
-    width: 700px;
-    width: 500px;
+    width: 600px;
   }
   #zad1:hover #zad2 {
     transition-delay: 0.5s;
@@ -81,14 +80,14 @@ body {
 .cm-error {color: #f00;}
 .cm-invalidchar {color: #f00;}
 
-.links{
+.zadania .links{
   width: 700px;
   display: block;
   align-items: center;
   justify-content: space-between;
 }
 
-.links a{
+.zadania .links a{
   text-decoration: none;
   text-transform: uppercase;
   color: black;
@@ -108,10 +107,10 @@ body {
   display: flex;
 }
 
-.links a:hover{
+.zadania .links a:hover{
   color: var(--main);
 }
 
-.links a:hover .spanon{
+.zadania .links a:hover .spanon{
   width: 20%;
 }

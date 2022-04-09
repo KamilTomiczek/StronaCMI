@@ -1,6 +1,4 @@
 footer{
-    overflow: hidden;
-    height: 125px;
     background: #fff;
     display: flex;
     justify-content: space-between;
@@ -11,18 +9,20 @@ footer{
 }
 
 footer div{
-    min-width: 200px;
-    padding: 50px;
+    padding: 0 40px;
 }
 
 footer .authors{
     font-weight: 600;
     font-size: 16px;
+    min-width: 120px;
+    max-height: 125px;
+
 }
 
 footer .authors span{
     color: #777;
-    padding-left: 10px;
+    padding-left: 5px;
     font-size: 14px;
 }
 
@@ -30,17 +30,53 @@ footer .partners{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1000px;
+    width: 900px;
+    flex-wrap: wrap;
+
 }
 
-footer .logo {
-    height: 100%;
-    width: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+footer .partners img{
+    width: 25%;
 }
 
-footer .logo img{
-    width: 100%;
+
+@media(max-width:1300px){
+    footer .authors{
+        font-size: 12px;
+        min-width: 100px;
+    }
+    
+    footer .authors span{
+        padding-left: 5px;
+        font-size: 10px;
+    }
+}
+
+@media(max-width:950px){
+
+    footer{
+        flex-direction: column;
+    }
+
+    footer .authors{
+        font-size: 16px;
+        text-align: center;
+        padding-top: 10px;
+    }
+    
+    footer .authors span{
+        font-size: 12px;
+    }
+
+    footer .partners{
+        width: 700px;
+    }
+}
+
+@media(max-width:768px){
+    footer .partners{
+        flex-direction: column;
+        width: 900px;
+    }
+
 }

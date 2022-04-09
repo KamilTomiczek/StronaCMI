@@ -1,3 +1,7 @@
+.gallery{
+    min-height: 80vh;
+}
+
 .gallery .box-container{
     display: flex;
     flex-wrap: wrap;
