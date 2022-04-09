@@ -114,3 +114,9 @@ body {
 .zadania .links a:hover .spanon{
   width: 20%;
 }
+.codebox{
+  background-color: rgba(255, 255, 255, .9); 
+  border-radius: 16px; 
+  padding: 22px;
+  width: 600px;
+}
