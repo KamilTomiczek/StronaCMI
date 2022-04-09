@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 body {
     overflow: hidden;
     background: #008196;
@@ -31,18 +30,19 @@ body {
     overflow-y:visible;
   }
   #zad1:hover #zad2 {
-    display: block;
     transition-delay: 0.5s;
-    margin-left: auto;
-    margin-right: auto;
     opacity: 1;
   }
  
   #zad2 {
+    display: flex;
     opacity: 0;
     transition: 1s;
     text-align: left;
     font-size: 23px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
   }
 /* DEFAULT THEME */
 
@@ -90,7 +90,10 @@ body {
   color: black;
   font-size: 35px;
   transition: .5s;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .spanon{
@@ -107,6 +110,4 @@ body {
 
 .links a:hover .spanon{
   width: 15%;
-  margin-left: auto;
-  margin-right: auto;
 }
