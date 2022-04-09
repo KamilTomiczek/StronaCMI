@@ -29,8 +29,7 @@ body {
   #zad1:hover {
     height: 450px;
     overflow-y:visible;
-    width: 700px;
-    width: 500px;
+    width: 600px;
   }
   #zad1:hover #zad2 {
     transition-delay: 0.5s;
@@ -114,4 +113,10 @@ body {
 
 .links a:hover .spanon{
   width: 20%;
+}
+.codebox{
+  background-color: rgba(255, 255, 255, .9); 
+  border-radius: 16px; 
+  padding: 22px;
+  width: 600px;
 }
