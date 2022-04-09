@@ -29,6 +29,8 @@ body {
   #zad1:hover {
     height: 450px;
     overflow-y:visible;
+    width: 700px;
+    width: 500px;
   }
   #zad1:hover #zad2 {
     transition-delay: 0.5s;
@@ -41,22 +43,23 @@ body {
     transition: 1s;
     text-align: left;
     font-size: 23px;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     padding: 40px 0px;
+    pointer-events: none;
   }
 /* DEFAULT THEME */
 
  .cm-header {color: blue;}
  .cm-quote {color: #090;}
 .cm-negative {color: #d44;}
-.cm-positive {color: #292;}
+.cm-positive {color: rgb(29, 187, 29);}
 .cm-header, .cm-strong {font-weight: bold;}
 .cm-em {font-style: italic;}
 .cm-link {text-decoration: underline;}
 .cm-strikethrough {text-decoration: line-through;}
 
- .cm-keyword {color: rgb(175, 3, 197);}
+ .cm-keyword {color: rgb(225, 0, 255);}
  .cm-atom {color: rgb(38, 9, 228);}
  .cm-number {color: rgb(8, 171, 106);}
  .cm-def {color: #00f;}
@@ -110,5 +113,5 @@ body {
 }
 
 .links a:hover .spanon{
-  width: 15%;
+  width: 20%;
 }
