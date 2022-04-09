@@ -8,6 +8,11 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    transition: .5s;
+}
+
+html{
+    overflow-x: hidden;
 }
 
 body{
@@ -19,7 +24,6 @@ header{
     justify-content: space-between;
     align-items: center;
     height: 100px;
-    overflow: hidden;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     position: sticky;
@@ -87,4 +91,94 @@ header .links a:hover{
 
 header .links a:hover span{
     width: 100%;
+}
+
+header .icon{
+    display: none;
+}
+
+@media(max-width:1300px){
+    header{
+        height: 80px;
+    }
+
+    header .links{
+        width: 550px;
+    }
+
+    header .links a{
+        font-size: 16px;
+    }
+
+    header .logoCMI a{
+        height: 50px;
+        width: 150px;
+    }
+
+    header .logoZST a{
+        height: 70px;
+        width: 150px;
+        padding: 5px 10px;
+    }
+}
+
+@media(max-width:950px){
+
+    header .links{
+        position: absolute;
+        top: 100%; left: 0%; right: 0;
+        background: #f7f7f7f7;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        flex-direction: column;
+        width: 100%;
+        gap: 2rem;
+        padding: 40px 0;
+        transition: .5s;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+    }
+
+    header .links.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .links a span{
+        display: none;
+    }
+
+    header .links a{
+        display: flex;
+        width: 80%;
+        height: 60px;
+        background: #fff;
+        border: 1px solid black;
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    header .icon{
+        display: block;
+        font-size: 32px;
+        cursor: pointer;
+    }    
+}
+
+@media(max-width:768px){
+
+}
+
+@media(max-width:450px){
+    header .logoZST a{
+        margin-right: -30px;
+        height: 60px;
+    }
+
+    header .logoCMI a{
+        height: 40px;
+        padding: 0 10px;
+    }
+
+    header .icon {
+        font-size: 24px;
+    }
 }

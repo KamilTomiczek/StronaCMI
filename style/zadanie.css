@@ -2,30 +2,31 @@ body {
     overflow: hidden;
     background: #008196;
   }
+
+  .zadania{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
   
   #zad1{
-    border: 0;
-    border-radius: 5px;
     background: rgba(255, 255, 255, .9);
-    width: 70%;
+    padding: 0 400px;
     text-align: center;
     height: 80px;
     font-size: 40px;
     padding-top: 20px;
     overflow: auto;
     transition: all 1s;
-    font-family: 'Montserrat', sans-serif;
     overflow-y:hidden;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 20px;
     border: 1rem solid #fff;
     border-radius: 16px;
     scroll-behavior: unset;
   }
   #zad1:hover {
-    width: 68%;
-    text-align: center;
     height: 450px;
     overflow-y:visible;
   }
