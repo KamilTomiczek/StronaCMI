@@ -30,7 +30,6 @@ function Push(){
     }
     else{
         zd.src = "../img/"+licznik+".jpg";
-        
     }
     if(licznik == 2){
         c1.style.display = "none"
