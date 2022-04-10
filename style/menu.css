@@ -140,4 +140,8 @@ header .navbar a:hover span{
     html{
         font-size: 50%;
     }
+
+    header .logo img{
+        width: 125px;
+    }
 }
