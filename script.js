@@ -79,3 +79,18 @@ function Back(){
         c5.style.display = "block"
     }
 }
+
+r = false
+
+function rotate(){
+
+    if(r != true){
+        document.querySelector('body').style.transform = "rotateY(180deg)"
+        r = true
+    }
+    else{
+        document.querySelector('body').style.transform = "rotateY(0deg)"
+        r = false
+    }
+    
+}
