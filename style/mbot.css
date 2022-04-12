@@ -67,3 +67,8 @@
     right: 0;
     border-radius: 3px 0 0 3px;
   }
+  #c1, #c2, #c3, #c4, #c5{
+      left: -800px;
+      position:absolute;
+      transition: 1.75s;
+  }

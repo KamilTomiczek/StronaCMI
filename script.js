@@ -25,58 +25,61 @@ function Push(){
     if(licznik > 5){
         licznik = 1;
         zd.src = "../img/"+licznik+".jpg";
-        c1.style.display = "block"
-        c5.style.display = "none"
+        c1.style.left = "0px"
+        c5.style.left = "800px"
     }
     else{
         zd.src = "../img/"+licznik+".jpg";
     }
     if(licznik == 2){
-        c1.style.display = "none"
-        c2.style.display = "block"
+        c2.style.left = "0px"
+        c1.style.left = "800px"
     }
     else if(licznik == 3){
-        c2.style.display = "none"
-        c3.style.display = "block"
+        c3.style.left = "0px"
+        c2.style.left = "800px"
     }
     else if(licznik == 4){
-        c3.style.display = "none"
-        c4.style.display = "block"
+        c4.style.left = "0px"
+        c3.style.left = "800px"
     }
     else if(licznik == 5){
-        c4.style.display = "none"
-        c5.style.display = "block"
+        c5.style.left = "0px"
+        c4.style.left = "800px"
     }
 }
+
 function Back(){
     var zd = document.getElementById("zdjecie");
     licznik --;
     if(licznik < 1){
         licznik = 5;
         zd.src = "../img/"+licznik+".jpg";
+        c5.style.left = "0px"
+        c1.style.left = "-800px"
     }
     else{
         zd.src = "../img/"+licznik+".jpg";
     }
     if(licznik == 1){
-        c2.style.display = "none"
-        c1.style.display = "block"
+        c1.style.left = "0px"
+        c2.style.left = "800px"
     }
     else if(licznik == 2){
-        c3.style.display = "none"
-        c2.style.display = "block"
+        c2.style.left = "0px"
+        c3.style.left = "800px"
     }
     else if(licznik == 3){
-        c4.style.display = "none"
-        c3.style.display = "block"
+        c3.style.left = "0px"
+        c4.style.left = "800px"
     }
     else if(licznik == 4){
-        c5.style.display = "none"
-        c4.style.display = "block"
+        c4.style.left = "0px"
+        c5.style.left = "800px"
     }
     else if(licznik == 5){
-        c1.style.display = "none"
-        c5.style.display = "block"
+        c5.style.left = "0px"
+        c1.style.left = "800px"
     }
 }
 
