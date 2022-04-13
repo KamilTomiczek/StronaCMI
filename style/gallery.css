@@ -57,7 +57,6 @@
 .dow {
     cursor: pointer;
     width: auto;
-    margin-top: 100%;
     color: black;
     font-weight: bold;
     font-size: 25px;
@@ -66,5 +65,7 @@
     -webkit-user-select: none;
     background:none ;
     border: none;
+    position: relative;
+    bottom: -37%;
   }
   
