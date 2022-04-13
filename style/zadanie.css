@@ -8,7 +8,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
-  min-height: 80vh;
+  min-height: 75vh;
   gap: 1rem;
   margin-top: 20px;
   width: 100%;
