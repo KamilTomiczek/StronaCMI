@@ -1,4 +1,6 @@
 var licznik = 1;
+var kolejnosc=new Array();
+var licz = 0;
 function show() {
     let menu = document.querySelector('#menu-bar');
     let navbar = document.querySelector('.navbar');
@@ -16,6 +18,18 @@ window.onscroll = () =>{
 }
 function Next(){
     var zd = document.getElementById("zdjecie");
+    kolejnosc[licz] = 'p';
+    licz = licz + 1;
+    if(licz == 5){
+        if(kolejnosc[0]=='p'&& kolejnosc[1]=='p'&& kolejnosc[2]=='l'&& kolejnosc[3]=='p'&& kolejnosc[4]=='p'){
+            licz = 6;
+            window.open('file://C:/Users/Pawel/Desktop/CMI/img/6.jpg')
+            licz = 0;
+        }
+        else{
+            licz = 0;
+        }
+    }
     var c1 = document.getElementById("c1");
     var c2 = document.getElementById("c2");
     var c3 = document.getElementById("c3");
@@ -127,6 +141,8 @@ function Next(){
 }
 
 function Back(){
+    kolejnosc[licz] = 'l';
+    licz = licz + 1;
     var zd = document.getElementById("zdjecie");
     licznik --;
     if(licznik < 1){
