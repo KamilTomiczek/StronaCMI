@@ -23,7 +23,7 @@ function Next(){
     if(licz == 5){
         if(kolejnosc[0]=='p'&& kolejnosc[1]=='p'&& kolejnosc[2]=='l'&& kolejnosc[3]=='p'&& kolejnosc[4]=='p'){
             licz = 6;
-            window.open('file://C:/Users/Pawel/Desktop/CMI/img/6.jpg')
+            window.open('../img/6.jpg')
             licz = 0;
         }
         else{
