@@ -37,7 +37,7 @@ function Next(){
     licznik ++;
     if(licznik > 5){
         licznik = 1;
-        zd.src = "../img/"+licznik+".jpg";
+        zd.src = "../img/"+licznik+".png";
             document.querySelector(".prev").disabled = true
             document.querySelector(".next").disabled = true
         c1.style.display = "none"
@@ -57,7 +57,7 @@ function Next(){
         })
     }
     else{
-        zd.src = "../img/"+licznik+".jpg";
+        zd.src = "../img/"+licznik+".png";
     }
     if(licznik == 2){
             document.querySelector(".prev").disabled = true
@@ -155,7 +155,7 @@ function Back(){
     licznik --;
     if(licznik < 1){
         licznik = 5;
-        zd.src = "../img/"+licznik+".jpg";
+        zd.src = "../img/"+licznik+".png";
         document.querySelector(".prev").disabled = true
         document.querySelector(".next").disabled = true
         c1.style.left = "-800px"
@@ -175,7 +175,7 @@ function Back(){
         })
     }
     else{
-        zd.src = "../img/"+licznik+".jpg";
+        zd.src = "../img/"+licznik+".png";
     }
     if(licznik == 1){
         document.querySelector(".prev").disabled = true
