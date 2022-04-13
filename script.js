@@ -21,8 +21,7 @@ function Next(){
     kolejnosc[licz] = 'p';
     licz = licz + 1;
     if(licz == 5){
-        if(kolejnosc[0]=='p'&& kolejnosc[1]=='p'&& kolejnosc[2]=='l'&& kolejnosc[3]=='p'&& kolejnosc[4]=='p'){
-            licz = 6;
+        if(kolejnosc[0]=='p'&& kolejnosc[1]=='p'&& kolejnosc[2]=='l'&& kolejnosc[3]=='p'&& kolejnosc[4]=='l'){
             window.open('../img/6.jpg')
             licz = 0;
         }
@@ -143,6 +142,15 @@ function Next(){
 function Back(){
     kolejnosc[licz] = 'l';
     licz = licz + 1;
+    if(licz == 5){
+        if(kolejnosc[0]=='p'&& kolejnosc[1]=='p'&& kolejnosc[2]=='l'&& kolejnosc[3]=='p'&& kolejnosc[4]=='l'){
+            window.open('../img/6.jpg')
+            licz = 0;
+        }
+        else{
+            licz = 0;
+        }
+    }
     var zd = document.getElementById("zdjecie");
     licznik --;
     if(licznik < 1){
