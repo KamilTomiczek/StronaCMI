@@ -14,7 +14,7 @@ window.onscroll = () =>{
     menu.classList.remove('fa-times');
     navbar.classList.remove('active');
 }
-function Push(){
+function Next(){
     var zd = document.getElementById("zdjecie");
     var c1 = document.getElementById("c1");
     var c2 = document.getElementById("c2");
@@ -25,15 +25,21 @@ function Push(){
     if(licznik > 5){
         licznik = 1;
         zd.src = "../img/"+licznik+".jpg";
+            document.querySelector(".prev").disabled = true
+            document.querySelector(".next").disabled = true
         c1.style.display = "none"
         c1.style.transition = "0"
         c1.style.left = "-800px"        
-        delay(1).then(() => {
+        delay(10).then(() => {
             c1.style.display = null 
             c1.style.transition = "1.5s"
             delay(100).then(() => {
                 c1.style.left = "0px"
                 c5.style.left = "800px"
+                delay(1000).then(() => {
+                document.querySelector(".prev").disabled = false
+                document.querySelector(".next").disabled = false
+                });
             })
         })
     }
@@ -41,56 +47,80 @@ function Push(){
         zd.src = "../img/"+licznik+".jpg";
     }
     if(licznik == 2){
+            document.querySelector(".prev").disabled = true
+            document.querySelector(".next").disabled = true
         c2.style.display = "none"
         c2.style.transition = "0"
         c2.style.left = "-800px"        
-        delay(1).then(() => {
+        delay(10).then(() => {
             c2.style.display = null 
             c2.style.transition = "1.5s"
             delay(100).then(() => {
                 c2.style.left = "0px"
                 c1.style.left = "800px"
+                delay(1000).then(() => {
+                    document.querySelector(".prev").disabled = false
+                    document.querySelector(".next").disabled = false
+                    });
             })
         })
 
     }
     else if(licznik == 3){
+            document.querySelector(".prev").disabled = true
+            document.querySelector(".next").disabled = true
         c3.style.display = "none"
         c3.style.transition = "0"
         c3.style.left = "-800px"        
-        delay(1).then(() => {
+        delay(10).then(() => {
             c3.style.display = null 
             c3.style.transition = "1.5s"
             delay(100).then(() => {
                 c3.style.left = "0px"
                 c2.style.left = "800px"
+                delay(1000).then(() => {
+                    document.querySelector(".prev").disabled = false
+                    document.querySelector(".next").disabled = false
+                    });
             })
         })
 
     }
     else if(licznik == 4){
+            document.querySelector(".prev").disabled = true
+            document.querySelector(".next").disabled = true
         c4.style.display = "none"
         c4.style.transition = "0"
         c4.style.left = "-800px"        
-        delay(1).then(() => {
+        delay(10).then(() => {
             c4.style.display = null 
             c4.style.transition = "1.5s"
             delay(100).then(() => {
                 c4.style.left = "0px"
                 c3.style.left = "800px"
+                delay(1000).then(() => {
+                    document.querySelector(".prev").disabled = false
+                    document.querySelector(".next").disabled = false
+                    });
             })
         })
     }
     else if(licznik == 5){
+            document.querySelector(".prev").disabled = true
+            document.querySelector(".next").disabled = true
         c5.style.display = "none"
         c5.style.transition = "0"
         c5.style.left = "-800px"        
-        delay(1).then(() => {
+        delay(10).then(() => {
             c5.style.display = null 
             c5.style.transition = "1.5s"
             delay(100).then(() => {
                 c5.style.left = "0px"
                 c4.style.left = "800px"
+                delay(1000).then(() => {
+                    document.querySelector(".prev").disabled = false
+                    document.querySelector(".next").disabled = false
+                    });
             })
         })
     }
@@ -102,6 +132,8 @@ function Back(){
     if(licznik < 1){
         licznik = 5;
         zd.src = "../img/"+licznik+".jpg";
+        document.querySelector(".prev").disabled = true
+        document.querySelector(".next").disabled = true
         c1.style.left = "-800px"
         c5.style.left = "0"
         delay(1000).then(() => {
@@ -112,7 +144,8 @@ function Back(){
                 delay(100).then(() => {
                     c1.style.transition = "1.5s"
                     c1.style.display = null
-
+                    document.querySelector(".prev").disabled = false
+                    document.querySelector(".next").disabled = false
                 })
             })
         })
@@ -121,6 +154,8 @@ function Back(){
         zd.src = "../img/"+licznik+".jpg";
     }
     if(licznik == 1){
+        document.querySelector(".prev").disabled = true
+        document.querySelector(".next").disabled = true
         c2.style.left = "-800px"
         c1.style.left = "0"
         delay(1000).then(() => {
@@ -131,7 +166,8 @@ function Back(){
                 delay(100).then(() => {
                     c2.style.transition = "1.5s"
                     c2.style.display = null
-
+                    document.querySelector(".prev").disabled = false
+                    document.querySelector(".next").disabled = false
                 })
             })
         })
@@ -140,6 +176,8 @@ function Back(){
         
     }
     else if(licznik == 2){
+        document.querySelector(".prev").disabled = true
+        document.querySelector(".next").disabled = true
         c3.style.left = "-800px"
         c2.style.left = "0"
         delay(1000).then(() => {
@@ -150,12 +188,15 @@ function Back(){
                 delay(100).then(() => {
                     c3.style.transition = "1.5s"
                     c3.style.display = null
-
+                    document.querySelector(".prev").disabled = false
+                    document.querySelector(".next").disabled = false
                 })
             })
         })
     }
     else if(licznik == 3){
+        document.querySelector(".prev").disabled = true
+        document.querySelector(".next").disabled = true
         c4.style.left = "-800px"
         c3.style.left = "0"
         delay(1000).then(() => {
@@ -166,12 +207,15 @@ function Back(){
                 delay(100).then(() => {
                     c4.style.transition = "1.5s"
                     c4.style.display = null
-
+                    document.querySelector(".prev").disabled = false
+                    document.querySelector(".next").disabled = false
                 })
             })
         })
     }
     else if(licznik == 4){
+        document.querySelector(".prev").disabled = true
+        document.querySelector(".next").disabled = true
         c5.style.left = "-800px"
         c4.style.left = "0"
         delay(1000).then(() => {
@@ -182,7 +226,8 @@ function Back(){
                 delay(100).then(() => {
                     c5.style.transition = "1.5s"
                     c5.style.display = null
-
+                    document.querySelector(".prev").disabled = false
+                    document.querySelector(".next").disabled = false
                 })
             })
         })
