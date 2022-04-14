@@ -17,14 +17,15 @@ body {
 #zad1{
   display: flex;
   flex-direction: column;
-  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, .9);
   text-align: center;
   height: 80px;
   font-size: 40px;
   overflow-x: hidden;
   transition: 1s;
   overflow-y:hidden;
-  border: 1rem solid rgba(255, 255, 255, .9);
+  border: 1rem solid;
+  border-color: rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   scroll-behavior: unset;
   width: 65%;
@@ -78,7 +79,7 @@ body {
 }
 
 .zadania .links a:hover{
-  color: var(--main);
+  color: (--main);
 }
 
 .zadania .links a:hover .spanon{
