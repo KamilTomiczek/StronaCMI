@@ -134,7 +134,7 @@ body {
 }
 
 /* DEFAULT THEME */
-
+  .cm-operator {color: rgb(0, 102, 255);}
  .cm-header {color: blue;}
  .cm-quote {color: #090;}
 .cm-negative {color: #d44;}
