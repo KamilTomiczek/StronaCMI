@@ -22,7 +22,7 @@ function Next(){
     licz = licz + 1;
     if(licz == 5){
         if(kolejnosc[0]=='p'&& kolejnosc[1]=='p'&& kolejnosc[2]=='l'&& kolejnosc[3]=='p'&& kolejnosc[4]=='l'){
-            window.open('../img/6.jpg')
+            window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
             licz = 0;
         }
         else{
@@ -144,7 +144,7 @@ function Back(){
     licz = licz + 1;
     if(licz == 5){
         if(kolejnosc[0]=='p'&& kolejnosc[1]=='p'&& kolejnosc[2]=='l'&& kolejnosc[3]=='p'&& kolejnosc[4]=='l'){
-            window.open('../img/6.jpg')
+            window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
             licz = 0;
         }
         else{
