@@ -75,3 +75,7 @@
       position:absolute;
       transition: 1.5s;
   }
+ #zdjecie2, #zdjecie3, #zdjecie4, #zdjecie5{
+     opacity: 0;
+      transition: 0.75s;
+  }
