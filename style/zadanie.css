@@ -34,7 +34,6 @@ body {
 #zad1:hover {
   height: 450px;
   overflow-y:visible;
-  width: 60%;
 }
 
 #zad1:hover #zad2 {
