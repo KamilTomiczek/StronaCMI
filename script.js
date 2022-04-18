@@ -47,7 +47,7 @@ function Next(){ // Ta funkcja przesuwa opis w stornie mbot.html
             z5.style.display = "none"
             z1.style.transition = "0"
             delay(10).then(() => {
-            z1.style.display = null
+            z1.style.display = "block";
             z1.style.transition = "0.75s"
             });
             delay(100).then(() => {
@@ -80,7 +80,7 @@ function Next(){ // Ta funkcja przesuwa opis w stornie mbot.html
                 z1.style.display = "none"
                 z2.style.transition = "0"
                 delay(10).then(() => {
-                    z2.style.display = null
+                    z2.style.display = "block";
                     z2.style.transition = "0.75s"
                     });
                 delay(100).then(() => {
@@ -112,7 +112,7 @@ function Next(){ // Ta funkcja przesuwa opis w stornie mbot.html
                 z2.style.display = "none"
                 z3.style.transition = "0"
                 delay(10).then(() => {
-                    z3.style.display = null
+                    z3.style.display = "block";
                     z3.style.transition = "0.75s"
                     });
                 delay(100).then(() => {
@@ -144,7 +144,7 @@ function Next(){ // Ta funkcja przesuwa opis w stornie mbot.html
             z3.style.display = "none"
             z4.style.transition = "0"
             delay(10).then(() => {
-                z4.style.display = null
+                z4.style.display = "block";
                 z4.style.transition = "0.75s"
                 });
             delay(100).then(() => {
@@ -175,7 +175,7 @@ function Next(){ // Ta funkcja przesuwa opis w stornie mbot.html
                 z4.style.display = "none"
                 z5.style.transition = "0"
                 delay(10).then(() => {
-                    z5.style.display = null
+                    z5.style.display = "block";
                     z5.style.transition = "0.75s"
                     });
                 delay(100).then(() => {
@@ -222,6 +222,14 @@ function Back(){
         licznik = 5;
         document.querySelector(".prev").disabled = true
         document.querySelector(".next").disabled = true
+        z1.style.opacity = 0;
+        delay(750).then(() => {
+        z1.style.display = "none";
+        z5.style.display = "block";
+        delay(100).then(() => {
+            z5.style.opacity = 1
+        });
+        });
         c1.style.left = "-800px"
         c5.style.left = "0"
         delay(1000).then(() => {
@@ -241,6 +249,14 @@ function Back(){
     if(licznik == 1){
         document.querySelector(".prev").disabled = true
         document.querySelector(".next").disabled = true
+        z2.style.opacity = 0;
+        delay(750).then(() => {
+        z2.style.display = "none";
+        z1.style.display = "block";
+        delay(100).then(() => {
+            z1.style.opacity = 1
+        });
+        });
         c2.style.left = "-800px"
         c1.style.left = "0"
         delay(1000).then(() => {
@@ -263,6 +279,14 @@ function Back(){
     else if(licznik == 2){
         document.querySelector(".prev").disabled = true
         document.querySelector(".next").disabled = true
+        z3.style.opacity = 0;
+        delay(750).then(() => {
+        z3.style.display = "none";
+        z2.style.display = "block";
+        delay(100).then(() => {
+            z2.style.opacity = 1
+        });
+        });
         c3.style.left = "-800px"
         c2.style.left = "0"
         delay(1000).then(() => {
@@ -282,6 +306,14 @@ function Back(){
     else if(licznik == 3){
         document.querySelector(".prev").disabled = true
         document.querySelector(".next").disabled = true
+        z4.style.opacity = 0;
+        delay(750).then(() => {
+        z4.style.display = "none";
+        z3.style.display = "block";
+        delay(100).then(() => {
+            z3.style.opacity = 1
+        });
+        });
         c4.style.left = "-800px"
         c3.style.left = "0"
         delay(1000).then(() => {
@@ -301,6 +333,14 @@ function Back(){
     else if(licznik == 4){
         document.querySelector(".prev").disabled = true
         document.querySelector(".next").disabled = true
+        z5.style.opacity = 0;
+        delay(750).then(() => {
+        z5.style.display = "none";
+        z4.style.display = "block";
+        delay(100).then(() => {
+            z4.style.opacity = 1
+        });
+        });
         c5.style.left = "-800px"
         c4.style.left = "0"
         delay(1000).then(() => {
