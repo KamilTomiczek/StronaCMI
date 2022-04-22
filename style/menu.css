@@ -32,8 +32,13 @@ header{
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 }
 
+header .logo{
+    display: flex;
+    gap: 3rem;
+}
+
 header .logo img{
-    width: 200px;
+    height: 70px;
 }
 
 header .navbar{
@@ -84,6 +89,16 @@ header .navbar a:hover{
 
 header .navbar a:hover span{
     width: 100%;
+}
+
+@media(max-width:1150px){
+    header .logo img{
+        height: 50px;
+    }
+
+    header .navbar a{
+        font-size: 1rem;
+    }
 }
 
 @media(max-width:991px){
@@ -142,6 +157,6 @@ header .navbar a:hover span{
     }
 
     header .logo img{
-        width: 125px;
+        height: 45px;
     }
 }
