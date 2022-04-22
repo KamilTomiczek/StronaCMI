@@ -1,4 +1,3 @@
-galeria
-opis na stronie głównej co to jest CMI
-opis robota mbot
-prezentacja zadań algorytmicznych
+logo zst
+nagłówek z opisem w zadania.html
+slider ze zdjeciami na stronie głównej
