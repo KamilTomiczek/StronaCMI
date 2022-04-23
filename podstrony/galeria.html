@@ -34,62 +34,17 @@
         </nav>
     </header>
 
-    <section class="gallery" id="gallery">
+    <section class="gallery">
         <div class="box-container">
-            <div class="box">
-                <img src="../img/gal1.jpg" alt="">
-                <div class="content">
-                    <h3>Dni otwarte</h3>
-                    <a href="../img/gal1.jpg" download="gal1.jpg" target="_blank" class="dow" >
-                        <i class="fa-solid fa-cloud-arrow-down"></i>
-                            </a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="../img/gal2.jpg" alt="">
-                <div class="content">
-                    <h3>Dni otwarte</h3>
-                    <a href="../img/gal2.jpg" download="gal2.jpg" target="_blank" class="dow" >
-                        <i class="fa-solid fa-cloud-arrow-down"></i>
-                            </a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="../img/gal3.jpg" alt="">
-                <div class="content">
-                    <h3>Dni otwarte</h3>
-                    <a href="../img/gal3.jpg" download="gal3.jpg" target="_blank" class="dow">
-                        <i class="fa-solid fa-cloud-arrow-down"></i>
-                            </a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="../img/gal4.jpg" alt="">
-                <div class="content">
-                    <h3>Dni otwarte</h3>
-                    <a href="../img/gal4.jpg" download="gal4.jpg" target="_blank" class="dow">
-                        <i class="fa-solid fa-cloud-arrow-down"></i>
-                            </a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="../img/gal5.jpg" alt="">
-                <div class="content">
-                    <h3>Wyjazd na praktyki zagraniczne</h3>
-                    <a href="../img/gal5.jpg" download="gal5.jpg" target="_blank" class="dow2">
-                        <i class="fa-solid fa-cloud-arrow-down"></i>
-                            </a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="../img/gal6.jpg" alt="">
-                <div class="content">
-                    <h3>Robot</h3></a>
-                    <a href="../img/gal6.jpg" download="gal6.jpg" target="_blank" class="dow">
-                        <i class="fa-solid fa-cloud-arrow-down"></i>
-                            </a>
-                </div>
-            </div>
+
+            <script>
+                var x = document.querySelector(".gallery .box-container")
+
+                for(i=1;i<=13;i++){
+                    x.innerHTML += '<div class="box"><img src="../img/gal (' + i + ').jpg" alt=""></div>'
+                }
+            </script>
+
         </div>
     </section>
 
