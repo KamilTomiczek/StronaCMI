@@ -27,12 +27,19 @@ body{
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
     border-radius: .5rem;
     overflow: hidden;
+    position: relative;
 }
 
 .box-container .img img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    position: absolute;
+}
+
+.box-container .img #second{
+    left: 100%;
+    transition: .5s;
 }
 
 .box-container .content{
@@ -66,7 +73,7 @@ body{
 
 @media(max-width:450px){
     .box-container .content .text{
-        font-size: 1.3rem;
+        font-size: 2.2rem;
     }
 
     .box-container .content{

@@ -21,6 +21,12 @@ footer .authors span{
     color: #888;
 }
 
+@media(max-width:540px){
+    footer .partners img{
+        width: 150px;
+    }
+}
+
 @media(max-width:450px){
     footer .authors{
         font-size: 1.5rem;
