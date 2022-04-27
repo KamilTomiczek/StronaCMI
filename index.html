@@ -46,7 +46,8 @@
             </div>
             
             <div class="img">
-                <img src="img/index1.svg" alt="">
+                <img id="first" src="img/index1.svg" alt="">
+                <img id="second" src="img/index1.svg" alt="">
             </div>
         </div>
     
@@ -76,6 +77,34 @@
 
         <h1 class="authors"> Autorzy: <span>Kamil Tomiczek | Paweł Barczyk</span></h1>
     </footer>
+
+    <script>
+        var f = document.querySelector("#first")
+        var s = document.querySelector("#second")
+        var i = 0
+
+        setInterval(() => {
+            i += 1
+
+            if(i > 3){
+                i = 1
+            }
+
+            s.src = "img/indx (" + i + ").jpg"
+            s.style.left = "0"
+            setTimeout(() => {
+                f.src = "img/indx (" + i + ").jpg";
+                s.style.transition = "none"
+                setTimeout(() => {
+                    s.style.left = "100%"
+
+                    setTimeout(() => {
+                        s.style.transition = ".5s"
+                    }, 500)
+                }, 500)
+            }, 500)
+        }, 5000)
+    </script>
     
 </body>
 </html>
