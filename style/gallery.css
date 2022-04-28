@@ -68,7 +68,8 @@
     position: relative;
     bottom: -37%;
   }
-  .dow2 {
+
+  /* .dow2 {
     cursor: pointer;
     width: auto;
     color: black;
@@ -81,4 +82,4 @@
     border: none;
     position: relative;
     bottom: -28%;
-  }
+  } */
