@@ -71,6 +71,16 @@ body{
     padding: 2rem;
 }
 
+@media(max-width:1700px){
+    .box-container .content{
+        order: 2;
+    }
+
+    .box-container .img{
+        order: 1;
+    }
+}
+
 @media(max-width:450px){
     .box-container .content .text{
         font-size: 2.2rem;
@@ -78,5 +88,10 @@ body{
 
     .box-container .content{
         height: auto;
+        order: 2;
+    }
+
+    .box-container .img{
+        order: 1;
     }
 }
