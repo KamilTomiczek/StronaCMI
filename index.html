@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,6 +20,7 @@
     <script src="script.js"></script>
 
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -35,40 +37,45 @@
             <a href="podstrony/zadania.html">Zadania<span></span></a>
         </nav>
     </header>
-    
+
 
     <section class="main">
         <div class="box-container">
             <div class="content">
                 <div class="text">
-                    <p>Celem projektu jest podniesienie kompetencji kadry dydaktycznej, tj. osób prowadzących zajęcia pozalekcyjne rozwijające zainteresowania informatyczne, a także aktywizacji młodzieży uzdolnionej informatycznie, pobudzania kreatywności oraz promowania współpracy zespołowej w ramach kół informatycznych.</p>
+                    <p>Celem projektu jest podniesienie kompetencji kadry dydaktycznej, tj. osób prowadzących zajęcia pozalekcyjne rozwijające zainteresowania informatyczne, a także aktywizacji młodzieży uzdolnionej informatycznie, pobudzania kreatywności
+                        oraz promowania współpracy zespołowej w ramach kół informatycznych.</p>
                 </div>
                 <div class="text">
-                    <p>Centrum Mistrzostwa Informatycznego zapewnia uczestnictwo w prestiżowym projekcie o zasięgu ogólnopolskim, w tym możliwość stałego kontaktu ze społecznością renomowanych uczelni technicznych, a także kooperację środowisk dydaktycznych na polu uczelni wyższych i nauczycieli szkolnych.</p>
+                    <p>Centrum Mistrzostwa Informatycznego zapewnia uczestnictwo w prestiżowym projekcie o zasięgu ogólnopolskim, w tym możliwość stałego kontaktu ze społecznością renomowanych uczelni technicznych, a także kooperację środowisk dydaktycznych
+                        na polu uczelni wyższych i nauczycieli szkolnych.</p>
                 </div>
             </div>
-            
-            <div class="img">
+
+            <div class="img" style="position: relative;">
                 <img id="first" src="img/index1.svg" alt="">
                 <img id="second" src="img/index1.svg" alt="">
+                <div style="position: absolute; bottom:0;height: 15px; width: 100%;background: rgba(255, 255, 255, .9);" id="pasek"></div>
             </div>
         </div>
-    
+
         <div class="box-container">
             <div class="img">
                 <img src="img/index2.svg" alt="">
             </div>
             <div class="content">
                 <div class="text">
-                    <p>Od <span onclick="rotate()">CMI</span> poza paczką robotów, grantem finansowym i warsztatami metodycznymi otrzymujemy cenne kontakty z ludźmi pełnymi pasji i otwartymi na współpracę, dlatego warto spożytkować finanse również na wyjazdy do zaprzyjaźnionych grantobiorców celem dzielenia się doświadczeniami i praktykami.</p>
+                    <p>Od <span onclick="rotate()">CMI</span> poza paczką robotów, grantem finansowym i warsztatami metodycznymi otrzymujemy cenne kontakty z ludźmi pełnymi pasji i otwartymi na współpracę, dlatego warto spożytkować finanse również na wyjazdy
+                        do zaprzyjaźnionych grantobiorców celem dzielenia się doświadczeniami i praktykami.</p>
                 </div>
                 <div class="text">
-                    <p>CMI umożliwia uczestnikom odkrywanie i rozwój talentów uczniowskich, szczególnie w zakresie informatycznym, nastawionym na rozwiązywanie problemów. Między innymi poprzez start w zawodach algotymicznych i projektowych, co może dodatkowo motywować uczniów i uczennice do rozwijania swoich zainteresowań i talentów.</p>
+                    <p>CMI umożliwia uczestnikom odkrywanie i rozwój talentów uczniowskich, szczególnie w zakresie informatycznym, nastawionym na rozwiązywanie problemów. Między innymi poprzez start w zawodach algotymicznych i projektowych, co może dodatkowo
+                        motywować uczniów i uczennice do rozwijania swoich zainteresowań i talentów.</p>
                 </div>
             </div>
         </div>
     </section>
-    
+
 
     <footer>
         <div class="partners">
@@ -84,15 +91,22 @@
     <script>
         var f = document.querySelector("#first")
         var s = document.querySelector("#second")
+        var p = document.getElementById("pasek");
         var i = 0
-
         setInterval(() => {
+            delay(100).then(() => {
+                p.style.transition = "0.5s";
+                p.style.width = "100%";
+                delay(500).then(() => {
+                    p.style.transition = "5s"
+                    p.style.width = "0%";
+                })
+            })
             i += 1
 
-            if(i > 3){
+            if (i > 3) {
                 i = 1
             }
-
             s.src = "img/indx (" + i + ").jpg"
             s.style.left = "0"
             setTimeout(() => {
@@ -107,7 +121,14 @@
                 }, 500)
             }, 500)
         }, 5000)
+
+        function delay(time) {
+            return new Promise(resolve => setTimeout(resolve, time));
+        }
     </script>
-    
+
 </body>
+
+</html>
+
 </html>
